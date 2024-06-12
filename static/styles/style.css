@@ -1,0 +1,378 @@
+.navbar
+{
+    height: 100vh;
+    width: 100vw;
+    background-image: url(/static/images/bookbackgorund.jpg);
+    background-repeat: none;
+    background-size: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: -10vh;
+}
+
+#green
+{
+    color: var(--green);
+}
+
+#white
+{
+    color: var(--white);
+}
+
+#grey
+{
+    color: var(--grey);
+}
+ .menu
+{
+    background-color: var(--navbar-bg-75);
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: sticky;
+    top: 0rem;
+    height: 10vh;
+ 
+}
+
+.menu .options
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3rem;
+}
+
+ .menu .options ul
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 3rem;
+    height: 100%;
+}
+
+
+.menu .options ul li 
+{
+    gap: 1.5rem;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ .menu .options ul li a
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: var(--green);
+}
+
+#search
+{
+    background-color: var(--white);
+    padding: .5rem;
+    border-radius: 8px;
+    border: 1px solid #E0E0E0;
+}
+#search>input
+{
+    border: none;
+}
+
+.navbar .login-container
+{
+    width: 30vw;
+    position: absolute;
+    top: 50vh;
+    left: 50%;
+    transform: translateX(-53%);
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.5rem;
+}
+
+.navbar .login-container h1
+{
+    font-size: 4rem;
+}
+
+
+.navbar .login-container button{
+    padding: .5rem;
+    font-size: 1rem;
+    width: 6vw;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#login-btn
+{
+    background-color: var(--black);
+    border: 2px solid var(--green);
+}
+#sign-up-btn
+{
+    background-color: var(--green);
+    border: 2px solid var(--black);
+}
+
+.about
+{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    padding: 5rem 0rem;
+}
+.about>div
+{
+    width: 40vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+}
+.about>div:nth-child(1)
+{
+    align-items: start;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.catalog
+{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 7.8rem;
+    gap: 2rem;
+
+}
+.catalog>div:nth-child(1)
+{
+    font-size: 1.5rem; 
+}
+
+
+.catalog>div:nth-child(2)
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.catalog button
+{
+    width:8rem;
+    height: 3rem;
+    border-radius: 8px;
+    border: 2px solid var(--black);
+    background-color: var(--white);
+    padding: .5rem;
+    cursor: pointer;
+}
+
+#selected_catalog
+{
+    border: 2px solid var(--green);
+    color: var(--green);
+}
+
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin: 20px;
+}
+.grid-container img
+{
+    width:80%;
+}
+.card {
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.pagination {
+    text-align: center;
+    margin: 20px;
+}
+
+.pagination button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.pagination button:hover {
+    background-color: #0056b3;
+}
+
+.books-section
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.books-section>div
+{
+    gap: 2rem;
+
+}
+
+.pagination {
+    text-align: center;
+    margin: 20px;
+}
+
+.pagination button {
+    background-color: var(--black);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.pagination button:hover {
+    background-color: var(--green);
+}
+
+.pagination button.active {
+    background-color: var(--green);
+    cursor: default;
+}
+
+.news
+{
+    margin-top: 15vh;
+}
+
+.news h1
+{
+    padding-left: 8rem;
+    font-size: 2rem;
+}
+.news .container
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80vw;
+    margin:5rem auto;
+}
+.news .container p
+{
+    background-color: var(--grey);
+    font-size: large;
+    padding: 1rem;
+    margin: 1.5rem;
+    color: var(--white);
+    border: 2px solid var(--green);
+    border-radius: 12px;
+}
+
+
+
+.news .container>div:nth-child(2)
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.news .container>div:nth-child(3)
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer
+{
+    display: flex;
+    justify-content:space-between;
+    padding: 2rem 5rem 2rem 5rem;
+    border-top: 1px solid #E6E6E6;
+}
+
+
+.card button {
+    padding: 8px 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+}
+
+.card button:hover {
+    background-color: #45a049;
+}
+
+.card button:active {
+    background-color: #3e8e41;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+.popup-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}

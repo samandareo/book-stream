@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/styles/general.css">
+    <link rel="stylesheet" href="/static/styles/style.css">
+    <script src="/static/scripts/script.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="menu">
+        <div class="logo">
+            <h1><span id="green">Book</span><span id="white">Stream<span></h1>
+        </div>
+        <div class="options">
+            <ul>
+                <li><a href="">Books</a></li>
+                <li><a href="">News & Blogs</a></li>
+                <li><a href="">Profile</a></li>
+                <li id="search"><img src="/static/images/search.svg" alt=""><input type="search"  placeholder="Search..."></li>
+            </ul>
+        </div>
+        </div>
+    <div class="navbar">
+       
+       <div class="login-container">
+        <div>
+            <h1><span id="green">Book</span><span id="white">Stream</span></h1>
+        </div>
+        <div>
+            <p>Immerse Yourself in Stories</p>
+        </div>
+        <div> 
+            <button id="login-btn" onclick="openLoginPopup()">Admin</button>
+        </div>
+    </div>
+    </div>
+    
+
+    <div class="about">
+        <div>
+            <h1>About</h1>
+            <p id="grey">Welcome to BookStream: Your Gateway to Endless Literary Adventures</p>
+            <p>We are five students from PDP University, and we've embarked on an exciting journey with our project, BookStream. This is a website that not only allows users to download books but also provides a seamless online reading experience. Our extensive catalog features a wide array of captivating books sure to pique the interest of our readers. </p>
+            <p>Our mission is to make reading accessible and enjoyable for everyone. We're constantly enhancing our interface to ensure that users can easily discover and immerse themselves in their favorite books. BookStream is dedicated to supporting education and fostering a love for reading. We aspire to become your go-to resource for literary adventures.</p>   
+        </div>
+        <div>
+            <img src="/static/images/about.jpg" alt="">
+        </div>
+    </div>
+
+    <div class="catalog">
+        <div>
+            <h1>Book Catalog</h1>
+        </div>
+        <div id="catalog-buttons">
+            <button onclick="filterBooks('All')">All</button>
+            <button onclick="filterBooks('Fantasy')">Fantasy</button>
+            <button onclick="filterBooks('History')">History</button>
+            <button onclick="filterBooks('Romance')">Romance</button>
+            <button onclick="filterBooks('Self-Help')">Self-Help</button>
+            <button onclick="filterBooks('Science Fiction')">Science Fiction</button>
+            <button onclick="filterBooks('Biography')">Biography</button>
+            <button onclick="filterBooks('Non-Fiction')">Non-Fiction</button>
+        </div>
+    </div>
+    <div class="books-section">
+        <div class="grid-container" id="grid-container">
+            
+        </div>
+        <div class="pagination" id="pagination">
+           
+        </div>
+    </div>
+
+
+    <div class="news">
+        <h1>News & Blogs</h1>
+        <div class="container">
+            <div>
+                <p>1. "The Midnight Feast" by Lucy Foley - This twisty, locked-room murder mystery promises secrets and lies as the opening night of The Manor reveals sinister happenings. </p>
+                <p>2. "Husbands & Lovers" by Beatriz Williams - Spanning decades and continents, this novel explores second chances and mysterious family heirlooms. </p>
+                <p>3. "One-Star Romance" by Laura Hankin - A witty romantic comedy where the main character finds herself caught up in a book club retreat gone awry.  </p>
+                <p>Upcoming Adaptations The second season of "House of the Dragon," based on George R.R. Martin's "Fire & Blood," is set to premiere on June 16. This season will continue to explore the rich history of House Targaryen, focusing on the civil war known as the Dance of the Dragons. Expect intense drama, complex characters, and epic battles as the story unfolds. For more details on the series, you can check updates on HBO's official page</p>
+            </div>
+            <div>
+                <img src="/static/images/news.jpg" alt="">
+            </div>
+    </div>
+    </div>
+
+   <footer>
+    <div>
+        <h3><span id="green">Book</span>Stream</h3>
+    </div>
+    <div>
+        <img src="/static/images/facebook.svg" alt="">
+        <img src="/static/images/linkidin.svg" alt="">
+        <img src="/static/images/youtube.svg" alt="">
+        <img src="/static/images/instagram.svg" alt="">
+    </div>
+   </footer>
+
+
+   <div id="login-popup" class="popup">
+    <div class="popup-content">
+        <span class="close" onclick="closeLoginPopup()">&times;</span>
+        <h2>Login</h2>
+        <form action="/login" method="post">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+</div>
+
+
+<script>
+        function openLoginPopup() {
+            document.getElementById("login-popup").style.display = "block";
+        }
+
+        function closeLoginPopup() {
+            document.getElementById("login-popup").style.display = "none";
+        }
+</script>
+</body>
+</html>

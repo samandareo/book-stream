@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.new h1{
+    color: green;
+}
+
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+    margin-top:25vh;
+}
+.form-container .form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+.form-container  .form label {
+    display: block;
+    font-weight: bold;
+}
+.form input[type="text"],
+.form textarea,
+.form input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+.form input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.form input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.notification {
+    position: fixed;
+    top: 50vh;
+    right: 45vw;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    display: none;
+}
+.notification.success {
+    background-color: #4CAF50;
+}
+.notification.error {
+    background-color: #f44336;
+}
+
