@@ -14,12 +14,12 @@ RUN pip install -r requirements.txt
 COPY . .
 
 # Set environment variables
-ENV DB_HOST=aws-db.ctbwu5xukfqx.eu-north-1.rds.amazonaws.com 
-ENV DB_NAME=daraja_db
-ENV DB_USER=postgres
-ENV DB_PASSWORD=hasanboy1403
-ENV TELEGRAM_BOT_TOKEN=7319243662:AAFvtYJ-EfGB7-r2DYVTIr70QOhjD6gdjbw
-ENV TELEGRAM_CHAT_ID=-1002201681248
+ENV DB_HOST=host
+ENV DB_NAME=name
+ENV DB_USER=user
+ENV DB_PASSWORD=password
+ENV TELEGRAM_BOT_TOKEN=bot-token
+ENV TELEGRAM_CHAT_ID=-100id
 
 # Expose the port the app runs on
 EXPOSE 5000
