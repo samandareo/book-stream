@@ -6,12 +6,12 @@ services:
     ports:
       - "5000:5000"
     environment:
-      - DB_HOST=aws-db.ctbwu5xukfqx.eu-north-1.rds.amazonaws.com
-      - DB_NAME=daraja_db
-      - DB_USER=postgres
-      - DB_PASSWORD=hasanboy1403
-      - TELEGRAM_BOT_TOKEN=7319243662:AAFvtYJ-EfGB7-r2DYVTIr70QOhjD6gdjbw
-      - TELEGRAM_CHAT_ID=-1002201681248
+      - DB_HOST=host
+      - DB_NAME=name
+      - DB_USER=user
+      - DB_PASSWORD=password
+      - TELEGRAM_BOT_TOKEN=bot-token
+      - TELEGRAM_CHAT_ID=-100id
     volumes:
       - ./uploads:/app/uploads
     depends_on:
@@ -22,9 +22,9 @@ services:
     volumes:
       - postgres_data:/var/lib/postgresql/data
     environment:
-      - POSTGRES_DB=daraja_db
-      - POSTGRES_USER=postgres
-      - POSTGRES_PASSWORD=hasanboy1403
+      - POSTGRES_DB=name
+      - POSTGRES_USER=user
+      - POSTGRES_PASSWORD=password
 
 volumes:
   postgres_data:
